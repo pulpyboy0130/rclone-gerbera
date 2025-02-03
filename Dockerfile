@@ -10,10 +10,11 @@ RUN apt-get update && apt-get install -y \
 # Create necessary directories
 RUN mkdir -p /mnt/onedrive
 
-# Set up environment variables for rclone
-ENV RCLONE_CONFIG="/config/rclone/rclone.conf"
-ENV RCLONE_REMOTE_NAME="onedrive"
+# Set up environment variables for rclone and mount path
+ENV RCLONE_CONFIG_PATH="/config/rclone/rclone.conf"
+ENV RCLONE_REMOTE_NAME="onedrive"  # Replace with your rclone remote name
 ENV MOUNT_PATH="/mnt/onedrive"
+ENV GERBERA_CONFIG_PATH="/config/gerbera"  # Optional, in case you want to use a custom config for Gerbera
 
 # Expose the necessary ports for Gerbera and DLNA
 EXPOSE 8080
