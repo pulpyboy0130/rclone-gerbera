@@ -12,7 +12,7 @@ RUN mkdir -p /mnt/onedrive
 
 # Set up environment variables for rclone and mount path
 ENV RCLONE_CONFIG_PATH="/config/rclone/rclone.conf"
-ENV RCLONE_REMOTE_NAME="onedrive"  # Replace with your rclone remote name
+ENV RCLONE_REMOTE_NAME="remote_name"
 ENV MOUNT_PATH="/mnt/onedrive"
 ENV GERBERA_CONFIG_PATH="/config/gerbera"  # Optional, in case you want to use a custom config for Gerbera
 
