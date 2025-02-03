@@ -14,7 +14,7 @@ RUN mkdir -p /mnt/onedrive
 ENV RCLONE_CONFIG_PATH="/config/rclone/rclone.conf"
 ENV RCLONE_REMOTE_NAME="remote_name"
 ENV MOUNT_PATH="/mnt/onedrive"
-ENV GERBERA_CONFIG_PATH="/config/gerbera"  # Optional, in case you want to use a custom config for Gerbera
+ENV GERBERA_CONFIG_PATH="/config/gerbera"
 
 # Expose the necessary ports for Gerbera and DLNA
 EXPOSE 8080
